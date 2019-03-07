@@ -44,7 +44,7 @@ body {
 }
 
 .navi #sidebar.active ul li a {
-    padding: 30px 0px 30px 0px;
+    padding: 40px 0px 40px 0px;
     text-align: center;
     font-size: 0.85em;
     transform: rotate( -90deg );
