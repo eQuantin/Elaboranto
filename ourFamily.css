@@ -1,49 +1,32 @@
-h2{
+
+/*Titre*/
+
+.miseenforme{
   border: 15px solid;
   border-image: linear-gradient(green, rgb(105, 128, 0)) 10;
   padding: 20px;
   display: inline-block
 }
 
-.poppins{
-  font-family: poppins;
+body{
+  font-family: 'Poppins';
+}
+.centered{
+  width:40%;
+  margin: auto;
+}
+
+.margin{
+  margin-bottom:10%;
+  margin-top:10%
 }
 
 
-  /* card image cap */
-  .row {
-    height: 500px;
-    background-color: red;
-  }
 
-  .card{
-    height:100%;
-  }
-  
-  .col{
-    width: 300px;
-  }
-  .size2{
-    height: 50%;
-  }
-  
-  
-/* cards  */
 
-.vertical{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-  
-  
 
-/*  texte */
 
-.texte{
-  width: 30px;
-}
-  /* form style*/
+/* form style*/
   
   /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea {
@@ -62,14 +45,4 @@ h2{
     background-color: #45a049;
   }
 
-  .centered{
-    width:40%;
-    margin: auto;
-  }
   
-  .margin{
-    margin-bottom:10%;
-    margin-top:10%
-  }
-
-
