@@ -14,9 +14,9 @@ body {
     display: flex;
 }
 
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
+.navi #sidebar {
+    min-width: 200px;
+    max-width: 200px;
     background: rgb(82, 82, 82);
     color: #fff;
     transition: all 0.3s;
@@ -26,72 +26,73 @@ body {
     z-index: 1;
 }
 
-#sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+.navi #sidebar.active {
+    min-width: 60px;
+    max-width: 60px;
     text-align: center;
 }
 
-#sidebar ul li a {
+.navi #sidebar ul li a {
     padding: 20px 40px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: block;
 }
 
-#sidebar ul li a:hover {
+.navi #sidebar ul li a:hover {
     color: rgb(82, 82, 82);
     background: #fff;
 }
 
-#sidebar.active ul li a {
-    padding: 20px;
+.navi #sidebar.active ul li a {
+    padding: 10px;
+    padding-left: 0;
     text-align: center;
     font-size: 0.85em;
 }
 
-#sidebar ul li a i {
+.navi #sidebar ul li a i {
     margin-right: 10px;
 }
 
-#sidebar.active ul li a i {
+.navi #sidebar.active ul li a i {
     display: none;
 }
 
-#sidebar.active ul li a svg {
+.navi #sidebar.active ul li a svg {
     display: none;
 }
 
-#sidebar .btn-collapse .fa-angle-right {
+.navi #sidebar .btn-collapse .fa-angle-right {
     display: none;
 }
 
-#sidebar.active .btn-collapse .fa-angle-right {
+.navi #sidebar.active .btn-collapse .fa-angle-right {
     display: inline;
 }
 
-#sidebar .btn-collapse .fa-angle-left {
+.navi #sidebar .btn-collapse .fa-angle-left {
     display: inline;
 }
 
-#sidebar.active .btn-collapse .fa-angle-left {
+.navi #sidebar.active .btn-collapse .fa-angle-left {
     display: none;
 }
 
-#sidebar ul.components {
+.navi #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #999;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
+.navi #sidebar.active .sidebar-header {
+    display: none;
 }
 
-.logo {
-    width: 66%;
-    margin-left: 17%;
+.navi .logo {
+    width: 50%;
+    margin-left: 25%;
 }
 
-.btn-collapse {
+.navi .btn-collapse {
     border-radius: 50%;
     text-align: center;
     float: right;
@@ -102,39 +103,39 @@ a[data-toggle="collapse"] {
     background-color: rgb(82, 82, 82);
 }
 
-.btn-collapse:hover {
+.navi .btn-collapse:hover {
     background-color: #fff;
 }
 
-.btn-collapse svg {
+.navi .btn-collapse svg {
     font-size: 30px;
 }
 
-#sidebar.active .btn-collapse {
+.navi #sidebar.active .btn-collapse {
     margin-right: 0;
     float: none;
 }
 
-.btn-collapse span {
+.navi .btn-collapse span {
     color: #fff;
 }
 
-.btn-collapse:hover span {
+.navi .btn-collapse:hover span {
     color: rgb(82, 82, 82);
 }
 
-.btn {
+.navi .btn {
     box-shadow: none !important;
 }
 
-#sidebar i,
-#sidebar span {
+.navi #sidebar i,
+.navi #sidebar span {
     display: inline-block;
 }
 
-#sidebar a,
-#sidebar a:hover,
-#sidebar a:focus {
+.navi #sidebar a,
+.navi #sidebar a:hover,
+.navi #sidebar a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -153,11 +154,11 @@ a[data-toggle="collapse"] {
     transition: all 0.3s;
     position: relative;
     z-index: 0;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 
 #content.active {
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 /* ---------------------------------------------------
@@ -165,49 +166,49 @@ a[data-toggle="collapse"] {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
-        min-width: 80px;
-        max-width: 80px;
+    .navi #sidebar {
+        min-width: 60px;
+        max-width: 60px;
         text-align: center;
-        margin-left: -80px !important;
+        margin-left: -60px !important;
     }
-    #sidebar.active {
+    .navi #sidebar.active {
         margin-left: 0 !important;
     }
-    #sidebar ul li a {
+    .navi #sidebar ul li a {
         padding: 20px 10px;
     }
-    #sidebar ul li a span {
+    .navi #sidebar ul li a span {
         font-size: 0.85em;
     }
-    #sidebar ul li a i {
+    .navi #sidebar ul li a i {
         margin-right: 0;
         display: block;
     }
-    #sidebar ul ul a {
+    .navi #sidebar ul ul a {
         padding: 10px !important;
     }
-    #sidebar ul li a i {
+    .navi #sidebar ul li a i {
         font-size: 1.3em;
     }
-    #sidebar {
+    .navi #sidebar {
         margin-left: 0;
     }
-    #content {
+    .navi #content {
         margin-left: 0;
     }
 }
 
 @media (max-width: 576px) {
-    #sidebar {
+    .navi #sidebar {
         display: none;
     }
 
-    #sidebar * {
+    .navi #sidebar * {
         display: none;
     }
 
-    #content {
+    .navi #content {
         margin-left:0;
     }
 }
