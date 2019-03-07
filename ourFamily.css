@@ -7,6 +7,7 @@
   padding: 20px;
   display: inline-block
 }
+
 .centered{
   width:40%;
   margin: auto;
@@ -17,7 +18,10 @@
   margin-top:10%
 }
 
-
+.container{
+  margin: 0 auto;
+  width:90%;
+}
 
 
 
