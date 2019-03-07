@@ -6,6 +6,10 @@
     grid-gap:15px;
   }
 
+  p {
+    padding:2px 2px;
+    text-align: center;
+  }
 
 .textFormat {
     display: flex;
