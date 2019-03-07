@@ -1,22 +1,19 @@
  .container {
-    background-color:pink;
+    background-color: white; /* changer la couleur pour visualiser le container */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25vh 25vh 25vh 25vh;
     grid-gap:15px;
   }
 
-p {
-    max-width: 90%;
-
-}
 
 .textFormat {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    overflow: scroll;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1vw;
 }
 
 .item-1 {
@@ -76,7 +73,7 @@ p {
   @media (max-width: 768px) {
 
   .container {
-    background-color:pink;
+    background-color: white; /* changer la couleur pour visualiser le container */
     display: flex;
     flex-flow: row wrap;
   }
