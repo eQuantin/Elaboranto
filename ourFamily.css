@@ -7,16 +7,17 @@
   padding: 20px;
   display: inline-block
 }
+
 .centered{
   width:40%;
   margin: auto;
 }
 
 .margin{
-  margin-bottom:10%;
-  margin-top:10%
+  margin-bottom:7%;
+  margin-top:7%;
+  margin-left: 12%;
 }
-
 
 
 
