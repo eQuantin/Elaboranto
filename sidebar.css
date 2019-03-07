@@ -6,33 +6,6 @@ body {
     background: #fafafa;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-    outline-style: none;
-    -moz-outline-style: none;
-}
-
-i,
-span {
-    display: inline-block;
-}
-
-.btn {
-    box-shadow: none !important;
-}
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -59,14 +32,25 @@ span {
     text-align: center;
 }
 
-#sidebar.active .sidebar-header .logo {
-    display: none;
+#sidebar ul li a {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: rgb(82, 82, 82);
+    background: #fff;
 }
 
 #sidebar.active ul li a {
     padding: 20px;
     text-align: center;
     font-size: 0.85em;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
 }
 
 #sidebar.active ul li a i {
@@ -81,11 +65,11 @@ span {
     display: none;
 }
 
-#sidebar .btn-collapse .fa-angle-left {
+#sidebar.active .btn-collapse .fa-angle-right {
     display: inline;
 }
 
-#sidebar.active .btn-collapse .fa-angle-right {
+#sidebar .btn-collapse .fa-angle-left {
     display: inline;
 }
 
@@ -96,21 +80,6 @@ span {
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #999;
-}
-
-#sidebar ul li a {
-    padding: 20px 40px;
-    font-size: 1.5em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: rgb(82, 82, 82);
-    background: #fff;
-}
-
-#sidebar ul li a i {
-    margin-right: 10px;
 }
 
 a[data-toggle="collapse"] {
@@ -152,6 +121,25 @@ a[data-toggle="collapse"] {
 
 .btn-collapse:hover span {
     color: rgb(82, 82, 82);
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
+#sidebar i,
+#sidebar span {
+    display: inline-block;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    outline-style: none;
+    -moz-outline-style: none;
 }
 
 /* ---------------------------------------------------
