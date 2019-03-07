@@ -227,3 +227,17 @@ body {
     }
 }
 
+@media (max-height: 767px) {
+    .navi #sidebar {
+        display: none;
+    }
+
+    .navi #sidebar * {
+        display: none;
+    }
+
+    .navi #content {
+        margin-left:0;
+    }
+}
+
