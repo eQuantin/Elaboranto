@@ -17,7 +17,7 @@ body {
 .navi #sidebar {
     min-width: 200px;
     max-width: 200px;
-    background: rgb(82, 82, 82);
+    background: #253842;
     color: #fff;
     transition: all 0.3s;
     position: fixed;
@@ -39,7 +39,7 @@ body {
 }
 
 .navi #sidebar ul li:hover {
-    color: rgb(82, 82, 82);
+    color: #253842;
     background: #fff;
 }
 
@@ -80,7 +80,7 @@ body {
 
 .navi #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #fff;
 }
 
 .navi #sidebar.active .sidebar-header {
@@ -100,7 +100,7 @@ body {
     width: 50px;
     height: 50px;
     border: none;
-    background-color: rgb(82, 82, 82);
+    background-color: #253842;
 }
 
 .navi .btn-collapse:hover {
@@ -208,7 +208,7 @@ body {
     .navi #sidebar {
         margin-left: 0;
     }
-    .navi #content {
+    #content {
         margin-left: 0;
     }
 }
@@ -222,12 +222,12 @@ body {
         display: none;
     }
 
-    .navi #content {
+    #content {
         margin-left:0;
     }
 }
 
-@media (max-height: 767px) {
+@media (max-height: 768px) {
     .navi #sidebar {
         display: none;
     }
@@ -236,7 +236,7 @@ body {
         display: none;
     }
 
-    .navi #content {
+    #content {
         margin-left:0;
     }
 }
