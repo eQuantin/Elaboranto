@@ -38,16 +38,16 @@ body {
     display: block;
 }
 
-.navi #sidebar ul li a:hover {
+.navi #sidebar ul li:hover {
     color: rgb(82, 82, 82);
     background: #fff;
 }
 
 .navi #sidebar.active ul li a {
-    padding: 10px;
-    padding-left: 0;
+    padding: 40px 0px 40px 0px;
     text-align: center;
     font-size: 0.85em;
+    transform: rotate( -90deg );
 }
 
 .navi #sidebar ul li a i {
@@ -157,7 +157,7 @@ body {
 
 .navi #sidebar .socials a i {
     font-size: 30px;
-    margin: 20px;
+    margin: 16px;
 
 }
 /* ---------------------------------------------------
