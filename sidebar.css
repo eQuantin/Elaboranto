@@ -165,17 +165,18 @@ body {
 ----------------------------------------------------- */
 
 #content {
-    width: auto;
+    width: 60%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     position: relative;
     z-index: 0;
-    margin-left: 200px;
+    margin-left: 20%;
+
 }
 
 #content.active {
-    margin-left: 60px;
+    margin-left: 20%;
 }
 
 /* ---------------------------------------------------
