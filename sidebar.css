@@ -89,6 +89,7 @@ body {
 
 .navi .logonav {
     width: 50%;
+    height: auto;
     margin-left: 25%;
 }
 
@@ -275,6 +276,7 @@ body {
     
     .navi .logonav {
         width: 50%;
+        height: auto;
         margin-left: 25%;
         margin-right: 25%;
     }

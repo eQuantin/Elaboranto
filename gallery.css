@@ -58,9 +58,6 @@ img {
       grid-column-end: 3;
   }
 
-.item-b {
-}
-
 .item-c {
     grid-column-start:4;
     grid-column-end: 4;
