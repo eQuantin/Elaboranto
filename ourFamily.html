@@ -124,7 +124,7 @@
                         <div class="card-deck">
                             <div class="card">
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dzzuxhr3r/image/upload/v1552041065/projet%20Blog%20photo/Remi.jpg"
+                                    src="https://res.cloudinary.com/dzzuxhr3r/image/upload/v1552575174/projet%20Blog%20photo/Remi.resized2.jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Rémi</h5>
@@ -252,7 +252,7 @@
 
                 <div>
 
-                    <form action="action_page.php">
+                    <form id="myform">
 
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -271,26 +271,46 @@
                         <textarea id="subject" name="subject" placeholder="Write something.."
                             style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Submit</button>
 
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                        <p>Votre message a bien été envoyé</p>
+                        </div>
+
+                        </div>
+                        
                     </form>
                 </div>
             </div>
         </div>
 
+        <!-- script votre message a été envoyé -->
+
+        
+        
+        
+        
+        
+        
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
         <!-- Popper.JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-            crossorigin="anonymous"></script>
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-            crossorigin="anonymous"></script>
-
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#sidebarCollapse').on('click', function () {
@@ -298,7 +318,8 @@
                     $('#content').toggleClass('active');
                 });
             });
-        </script>
+            </script>
+<script src="openModal.js"></script>
 </body>
 
 </html>
