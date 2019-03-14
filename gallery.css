@@ -1,4 +1,4 @@
-.logo{
+.glogo{
   opacity: 0;
   height: 0%;
   width: 0%;
@@ -9,6 +9,10 @@ hr {
   margin-right: 20%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid {
@@ -124,9 +128,6 @@ img {
   cursor: pointer;
 } 
 
-
-.item-b {
-}
 
 .item-c {
     grid-column-start:4;
