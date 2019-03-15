@@ -418,6 +418,16 @@ body {
 }
 
 @media (max-height: 670px) {
+    .navi #sidebar .socials {
+        display: none;
+    }
+
+    .navi #sidebar ul.components {
+        border-bottom: none;
+    }
+}
+
+@media (max-height: 500px) {
     .navi #sidebar {
         display: none;
     }
