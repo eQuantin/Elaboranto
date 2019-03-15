@@ -207,7 +207,7 @@ body {
     .navi #sidebar ul li a {
         padding: 40px 0px 40px 0px;
         text-align: center;
-        font-size: 0.85em;
+        font-size: 2vh;
         transform: rotate( -90deg );
         display: block;
     }
@@ -215,7 +215,7 @@ body {
     .navi #sidebar.active ul li a {
         text-align: left;
         padding: 20px 40px 20px 40px;
-        font-size: 1.2em;
+        font-size: 2vh;
         transform:  none;
     }
     
@@ -424,6 +424,10 @@ body {
 
     .navi #sidebar ul.components {
         border-bottom: none;
+    }
+    
+    .navi #sidebar .btn-collapse {
+        display: none;
     }
 }
 
