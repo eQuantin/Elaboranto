@@ -25,16 +25,19 @@ p {
 
 .carousel-caption {
   position: absolute;
-  top: 65%;
+  top: 68%;
 }
 
 .carousel-caption p {
-  font-size: 30px;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 32px;
 }
 
 .carousel-caption h5 {
-  font-size: 40px;
-  opacity: 0.9;
+  font-size: 60px;
+  opacity: 1;
+  font-family: 'Vibur', cursive;
+  margin-bottom: -10px;
 }
 
 
@@ -42,17 +45,26 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.downModule i{
-  margin: 20px;
+.downModule svg{
   font-size: 35px;
   cursor: pointer;
+  color:rgb(31, 52, 65);
+  margin-bottom: 10px;
 }
 
-.downModule h3{
+.rotate{ 
+  transform: rotate(180deg);
+}
+
+
+h3{
   margin: 20px;
+  font-family: 'Vibur', cursive;
+  font-size: 37px;
+  text-align: center;
+  color: rgb(31, 52, 65);
 }
 
 .gallery1 .container {
