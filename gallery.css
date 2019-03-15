@@ -76,17 +76,17 @@ img {
 .item-a {
       grid-column-start: 1;
       grid-column-end: 3;
-  }
-
-  #modalImage{
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-#modalImage:hover {opacity: 0.7;}
+.modalImage{
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.modalImage:hover {opacity: 0.7;}
 
 
-#myModal {
+.myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -104,9 +104,10 @@ img {
     width: 100%;
     max-width: 700px;
     height: auto;
+    opacity: 1;
 }
 
-#myModal p{
+.myModal p{
     color: antiquewhite;
     font-size: 11px;
 }
