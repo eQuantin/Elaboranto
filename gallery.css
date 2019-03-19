@@ -109,7 +109,7 @@ img {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(2, 22, 31, 0.95); /* Black w/ opacity */
     z-index: 999; /* Sit on top */
 }
 
@@ -121,6 +121,7 @@ img {
     max-width: 700px;
     height: auto;
     opacity: 1;
+    margin-bottom: 20px;
 }
 
 .myModal p{
@@ -310,9 +311,40 @@ img {
   margin: 10px;
 }
 
-.myModal{
-  display: none;
+.myModal {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(2, 22, 31, 0.95); /* Black w/ opacity */
+  z-index: 999; /* Sit on top */
 }
+
+/* Modal Content (Image) */
+.modal-content {
+  margin-top: 50%;
+  display: block;
+  width: 70%;
+  max-width: 700px;
+  height: auto;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+.myModal p{
+  color: antiquewhite;
+  font-size: 11px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 
 } 
 
