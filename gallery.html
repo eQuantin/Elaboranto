@@ -32,6 +32,21 @@
 <body>
 
     <div class="wrapper">
+
+            <div class="myModal" >
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                      
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" class="img01" src="">
+                      
+                    <!-- Modal Caption (Image Text) -->
+                    <div class="caption">
+                        <p></p>
+                    </div>
+            </div>
+
         <!-- Sidebar  -->
         <div class="navi">
             <nav id="sidebar">
@@ -99,13 +114,13 @@
         <div id="content">
             <img class="glogo" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_1.png" alt="logo">
 
+        <!-- Carousel  -->
             <div class="container-fluid">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slide1.jpg"
-                                alt="First slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slide1.jpg" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Welcome</h5>
                                 <p>We are a wonderful family...</p>
@@ -114,16 +129,14 @@
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slid4.jpg"
-                                alt="Second slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552998748/Ellaboranto/side_2.jpg" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>...Follows us during one year...</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820158/Ellaboranto/slid3.jpg"
-                                alt="Third slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552998738/Ellaboranto/side_3.jpg" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>...Around the world!</p>
                             </div>
@@ -143,6 +156,8 @@
 
             <hr>
 
+            <!-- Gallery 1  -->
+
             <h3>Canada<br/>- Algonquin park -</h3>
             <div class="downModule" onclick="dropDown()">
                 <i class="fas fa-arrow-circle-down"></i>
@@ -153,40 +168,12 @@
                 <div class="container">
                     
                     <div class="item-a">
-                        <img class= "modalImage" onclick="modalImage()" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg" alt="voyage">
-                        <div class="myModal" >
-
-                            <!-- The Close Button -->
-                            <span class="close">&times;</span>
-                              
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" class="img01"src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg">
-                              
-                            <!-- Modal Caption (Image Text) -->
-                            <div class="caption">
-                                <p>Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018</p>
-                            </div>
-                        </div>
+                        <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg" alt="voyage">
                     </div>
 
                     <div class="item-b">
-                        <img class= "modalImage" onclick="modalImage()" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg" alt="voyage2">
-                        <div class="myModal" >
-
-                            <!-- The Close Button -->
-                            <span class="close">&times;</span>
-                                  
-                             <!-- Modal Content (The Image) -->
-                            <img class="modal-content" class="img01"src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg">
-                                  
-                            <!-- Modal Caption (Image Text) -->
-                            <div class="caption">
-                                <p>Algonquin Parc / Canada / 87Q3RJPC+V4 / November 2018</p>
-                        </div>
-                        </div>
-                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg" alt="voyage2">
+                        <img class= "modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V4 / October 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg" alt="voyage2">
                     </div>
-
 
                     <div class="item-c">
                         <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817450/Ellaboranto/action-automobile-automotive-1849086.jpg"
@@ -205,9 +192,11 @@
             <hr>
 
             <h3>Japan<br/>- Tokyo -</h3>
-            <div class="downModule" onclick="dropDown()">
+            <div class="downModule2" onclick="dropDown2()">
                 <i class="fas fa-arrow-circle-down"></i>
             </div>
+
+            <!-- Gallery 2  -->
 
             <div class="gallery2">
                 <div class="container">
@@ -229,8 +218,11 @@
                 </div>
             </div>
 
+            <hr>
+             <!-- Gallery 3  -->
+
             <h3>USA<br/>- From Chicago to Dallas -</h3>
-            <div class="downModule" onclick="dropDown()">
+            <div class="downModule3" onclick="dropDown3()">
                 <i class="fas fa-arrow-circle-down"></i>
             </div>
 

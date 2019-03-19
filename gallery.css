@@ -1,3 +1,5 @@
+/* CAROUSSEL */ 
+
 .glogo{
   opacity: 0;
   height: 0%;
@@ -10,7 +12,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .container-fluid {
   width: 76%;
@@ -37,14 +38,16 @@ hr {
   margin-bottom: -10px;
 }
 
+/* BTN DOWN */ 
 
-.downModule {
+.downModule , .downModule2 , .downModule3{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 35px;
 }
 
-.downModule svg{
+svg{
   font-size: 35px;
   cursor: pointer;
   color:rgb(31, 52, 65);
@@ -63,6 +66,8 @@ h3{
   text-align: center;
   color: rgb(31, 52, 65);
 }
+
+/* GALLERY 1 */ 
 
 .gallery1 .container {
     height: 100%;
@@ -87,6 +92,8 @@ img {
       grid-column-end: 3;
 }
 
+      /* GALLERY 1-Modal */ 
+
 .modalImage{
    cursor: pointer;
    transition: 0.3s;
@@ -98,12 +105,12 @@ img {
 .myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 999; /* Sit on top */
 }
 
 /* Modal Content (Image) */
@@ -160,6 +167,8 @@ img {
     grid-row-end: 4;
 }
 
+/* GALLERY 2 */ 
+
 .gallery2 .container {
   height: 100%;
   display: grid;
@@ -188,6 +197,7 @@ img {
   opacity: 0.8;
 }
 
+/* GALLERY 3 */ 
 
 .gallery3 .container {
   height: 100%;
@@ -229,6 +239,7 @@ img {
   grid-row-end: 4;
 }
 
+/* MEDIA MOBILE */ 
 
 @media (max-width: 768px) {
 
