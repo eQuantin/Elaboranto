@@ -98,6 +98,7 @@ body {
     text-align: center;
     float: right;
     margin-right: 10px;
+    margin-top: 10px;
     width: 50px;
     height: 50px;
     border: none;
@@ -324,6 +325,7 @@ body {
         text-align: center;
         float: none;
         margin-right: 0;
+        margin-top: 10px;
         width: 50px;
         height: 50px;
         border: none;
