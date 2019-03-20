@@ -1,16 +1,22 @@
 
+
 /*Titre*/
 
 .miseenforme{
+  font-family: 'vibur', cursive;
   border: 15px solid;
   border-image: linear-gradient(green, rgb(105, 128, 0)) 10;
   padding: 20px;
-  display: inline-block
+  display: inline-block;
+  background-color: #a7bf6e;
+  
 }
 
 .centered{
+  font-family: 'vibur', cursive;
   width:40%;
   margin: auto;
+  
 }
 
 .margin{
@@ -19,12 +25,24 @@
   margin-left: 12%;
 }
 
-
-
+.card-body {
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 1.5em;
+  background-color: #a7bf6e;
+}
+  
+.card-title {
+  font-family: 'vibur', cursive;
+  font-size: 2em;
+}
 
 /* form style*/
   
   /* Style inputs with type="text", select elements and textareas */
+  
+
+  
+  
   input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -36,9 +54,15 @@
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
+  #country{
+    background-color: #a7bf6e;
+  }
+
+
+
   /* When moving the mouse over the submit button, add a darker green color */
   button:hover {
-    background-color: #45a049;
+    background-color: #a7bf6e;;
   }
 
   
@@ -61,7 +85,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #a7bf6e;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
