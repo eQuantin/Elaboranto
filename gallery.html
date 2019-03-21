@@ -25,6 +25,7 @@
         integrity="sha384-xl26xwG2NVtJDw2/96Lmg09++ZjrXPc89j0j7JHjLOdSwHDHPHiucUjfllW0Ywrq"
         crossorigin="anonymous"></script>
 
+
 </head>
 
 <body>
@@ -41,7 +42,8 @@
                 </button>
 
                 <div class="sidebar-header">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_2_blanc.png" alt="logo" class="logonav">
+                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_2_blanc.png"
+                        alt="logo" class="logonav">
                 </div>
 
                 <ul class="list-unstyled components">
@@ -94,9 +96,17 @@
         </div>
 
         <!-- Page Content  -->
+
         <div id="content">
-            <img class="glogo" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_1.png"
-                alt="logo">
+
+            <button type="button" id="burgerMenu" class="btn btn-burger">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <img class="glogo"
+                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_1.png" alt="logo">
 
             <div class="container-fluid">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -142,53 +152,76 @@
 
             <hr>
 
+            <div class="downModule" onclick="dropDown()">
+                <h3>Algonquin park - Canada</h3>
+                <i class="fas fa-arrow-circle-down"></i>
+            </div>
 
-            <div class="container">
-                <div class="item-a">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg"
-                        alt="voyage">
-                </div>
-                <div class="item-b">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg"
-                        alt="voyage2">
-                </div>
-                <div class="item-c">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817450/Ellaboranto/action-automobile-automotive-1849086.jpg"
-                        alt="voyage3">
-                </div>
-                <div class="item-d">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817446/Ellaboranto/barefoot-beach-cheerful-1574653.jpg"
-                        alt="voyage4">
-                </div>
-                <div class="item-e">
-                    <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817444/Ellaboranto/beach-children-coast-1509757.jpg"
-                        alt="voyage5">
+            <div class="gallery1">
+                <div class="container">
+
+                    <div class="item-a">
+                        <img id="modalImage"
+                            src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg"
+                            alt="voyage">
+                        <div id="myModal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01"
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption">
+                                <p>Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-b">
+                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg"
+                            alt="voyage2">
+                    </div>
+                    <div class="item-c">
+                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817450/Ellaboranto/action-automobile-automotive-1849086.jpg"
+                            alt="voyage3">
+                    </div>
+                    <div class="item-d">
+                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817446/Ellaboranto/barefoot-beach-cheerful-1574653.jpg"
+                            alt="voyage4">
+                    </div>
+                    <div class="item-e">
+                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817444/Ellaboranto/beach-children-coast-1509757.jpg"
+                            alt="voyage5">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('active');
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $('#content').toggleClass('active');
+                });
             });
-        });
-    </script>
+        </script>
+        <script type="text/javascript" src="gallery.js"></script>
 </body>
 
 </html>
