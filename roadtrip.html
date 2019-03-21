@@ -4,9 +4,6 @@
 <head>
   <meta charset="utf-8">
 
- 
-
-  <title>Elaboranto</title>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -16,7 +13,7 @@
   <!-- Our Custom CSS -->
   <link rel="stylesheet" href="roadtrip.css">
   <link rel="stylesheet" href="sidebar.css">
-  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/solid.js"
@@ -98,10 +95,17 @@
 
     <!-- Page Content  -->
     <div id="content">
+
+      <button type="button" id="burgerMenu" class="btn btn-burger">
+        <span>
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
       <div id="pagecenter">
         <h1 id=titledescription>Choose your Destination And Click on</h1>
-       
-          <div class="container-fluid">
+
+        <div class="container-fluid">
           <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -243,20 +247,20 @@
 
 
 
-  
-      <p class= "descriptionOfBar">Travel in progress</p>
-       <div class="container">
-        <div class= "liaison"></div>
-        <div class= "ping"><span class= "progressTextAlign">Japan</span></div>
-        <div class= "liaison"></div>
-        <div class= "ping"><span  class= "progressTextAlign">USA</span></div>
-        <div class= "liaison"></div>
-        <div class= "pingSecond"><span  class= "progressTextAlign">Canada</span></div>
-        <div class= "liaisonOut"></div>
-        <div class= "pingSecond"><span  class= "progressTextAlign">indian</span></div> 
-        <div class= "liaisonOut"></div>  
-       </div>
- 
+
+      <p class="descriptionOfBar">Travel in progress</p>
+      <div class="container">
+        <div class="liaison"></div>
+        <div class="ping"><span class="progressTextAlign">Japan</span></div>
+        <div class="liaison"></div>
+        <div class="ping"><span class="progressTextAlign">USA</span></div>
+        <div class="liaison"></div>
+        <div class="pingSecond"><span class="progressTextAlign">Canada</span></div>
+        <div class="liaisonOut"></div>
+        <div class="pingSecond"><span class="progressTextAlign">indian</span></div>
+        <div class="liaisonOut"></div>
+      </div>
+
 
 
 
@@ -265,39 +269,33 @@
 
 
     </div>
-  </div>
 
-      <!--modal tokyo -->
+    <!--modal tokyo -->
 
-      <div 
-        class="modal fade tokyo" 
-        tabindex="-1" 
-        role="dialog" 
-        aria-labelledby="myExtraLargeModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="tokyomodalorder">
-              <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551952234/Ellaboranto/tokyo.jpg"
-                class="d-block w-100 " alt="...">
-              <div class="paragraphSizingTokyo">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                <p>
-                  <h3 class="titlemodalparagraph">Tokyo trip</h3>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus
-                  eget nisl quis
-                  tincidunt. Phasellus porta eros imperdiet urna malesuada, vel laoreet
-                  tortor eleifend. Proin sed
-                  odio tincidunt, hendreri...
-                </p>
-              </div>
+    <div class="modal fade tokyo" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="tokyomodalorder">
+            <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551952234/Ellaboranto/tokyo.jpg"
+              class="d-block w-100 " alt="...">
+            <div class="paragraphSizingTokyo">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <p>
+                <h3 class="titlemodalparagraph">Tokyo trip</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus
+                eget nisl quis
+                tincidunt. Phasellus porta eros imperdiet urna malesuada, vel laoreet
+                tortor eleifend. Proin sed
+                odio tincidunt, hendreri...
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
 
     <!--modal osaka -->
@@ -309,11 +307,11 @@
           <div class="osakamodalorder">
             <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551952231/Ellaboranto/osaka.jpg"
               class="d-block w-100 " alt="...">
-              
+
             <div class="paragraphSizingOsaka">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
               <p>
                 <h3 class="titlemodalparagraph">Osaka trip</h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus
@@ -322,7 +320,7 @@
                 tortor eleifend. Proin sed
                 odio tincidunt, hendreri...
               </p>
-               
+
             </div>
           </div>
         </div>
@@ -352,7 +350,7 @@
                 tortor eleifend. Proin sed
                 odio tincidunt, hendreri...
               </p>
-              
+
             </div>
           </div>
         </div>
@@ -371,9 +369,9 @@
             <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551952231/Ellaboranto/dallas.jpg"
               class="d-block w-100 " alt="...">
             <div class="paragraphSizingDallas">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
               <p>
                 <h3 class="titlemodalparagraph">Dallas trip</h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus
@@ -388,19 +386,17 @@
       </div>
     </div>
 
-
-      <!-- end modal-->
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- end modal-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
