@@ -9,6 +9,8 @@
   p {
     padding:2px 2px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
   }
 
 .textFormat {
@@ -40,6 +42,7 @@
     background-color: #edaf28;
     grid-column: 3;
     grid-row: 1;
+    opacity: 0.8;
   }
   .item-3 {
     background-color: red;
@@ -51,6 +54,7 @@
     color: white;
     grid-column: 1;
     grid-row: 2 / 4;
+    opacity: 0.8;
   }
 
   .item-5 {
@@ -68,6 +72,7 @@
   .item-7 {
     background-color: #25333b;
     color: white;
+    opacity: 1;
     /* si rien n'est indiqué en grid-column et row alors les valeurs sont 1 par défaut */
   }
 

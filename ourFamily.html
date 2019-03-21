@@ -42,7 +42,7 @@
 
                 <div class="sidebar-header">
                     <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_2_blanc.png"
-                        alt="logo" class="logo">
+                        alt="logo" class="logonav">
                 </div>
 
                 <ul class="list-unstyled components">
@@ -65,13 +65,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="ourFamilly.html">
+                        <a href="ourFamily.html">
                             <i class="fas fa-question"></i>
                             About us
                         </a>
                     </li>
                     <li>
-                        <a href="ourFamilly.html">
+                        <a href="ourFamily.html">
                             <i class="fas fa-paper-plane"></i>
                             Contact
                         </a>
@@ -96,6 +96,15 @@
 
         <!-- Page Content  -->
         <div id="content">
+
+            <!-- Burger menu -->
+
+            <button type="button" id="burgerMenu" class="btn btn-burger">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
             <div class="container">
 
                 <div class="centered">
@@ -124,7 +133,7 @@
                         <div class="card-deck">
                             <div class="card">
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dzzuxhr3r/image/upload/v1552041065/projet%20Blog%20photo/Remi.jpg"
+                                    src="https://res.cloudinary.com/dzzuxhr3r/image/upload/v1552575174/projet%20Blog%20photo/Remi.resized2.jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Rémi</h5>
@@ -186,14 +195,15 @@
 
 
 
-              
+
 
 
                 <!-- The parents -->
-                <div class="row"><h2 class="miseenforme margin">The parents</h2>
+                <div class="row">
+                    <h2 class="miseenforme margin">The parents</h2>
                 </div>
-                
-  
+
+
 
                 <div class="margin">
 
@@ -242,7 +252,7 @@
 
                     </div>
                 </div>
-                
+
                 <br />
 
                 <!-- formulaire contact -->
@@ -252,7 +262,7 @@
 
                 <div>
 
-                    <form action="action_page.php">
+                    <form id="myform">
 
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -271,12 +281,32 @@
                         <textarea id="subject" name="subject" placeholder="Write something.."
                             style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Submit</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Votre message a bien été envoyé</p>
+                            </div>
+
+                        </div>
 
                     </form>
                 </div>
             </div>
         </div>
+
+        <!-- script votre message a été envoyé -->
+
+
+
+
+
+
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -299,6 +329,7 @@
                 });
             });
         </script>
+        <script src="openModal.js"></script>
 </body>
 
 </html>
