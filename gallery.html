@@ -24,13 +24,29 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/fontawesome.js"
         integrity="sha384-xl26xwG2NVtJDw2/96Lmg09++ZjrXPc89j0j7JHjLOdSwHDHPHiucUjfllW0Ywrq"
         crossorigin="anonymous"></script>
-
-
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="wrapper">
+
+            <div class="myModal" >
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                      
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" class="img01" src="">
+                      
+                    <!-- Modal Caption (Image Text) -->
+                    <div class="caption">
+                        <p></p>
+                    </div>
+            </div>
+
         <!-- Sidebar  -->
         <div class="navi">
             <nav id="sidebar">
@@ -98,41 +114,31 @@
         <!-- Page Content  -->
 
         <div id="content">
+            <img class="glogo" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_1.png" alt="logo">
 
-            <button type="button" id="burgerMenu" class="btn btn-burger">
-                <span>
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-
-            <img class="glogo"
-                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551882370/Ellaboranto/logo_1.png" alt="logo">
-
+        <!-- Carousel  -->
             <div class="container-fluid">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slide1.jpg"
-                                alt="First slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slide1.jpg" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>WELCOME</h5>
+                                <h5>Welcome</h5>
                                 <p>We are a wonderful family...</p>
                             </div>
 
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820157/Ellaboranto/slid4.jpg"
-                                alt="Second slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552998748/Ellaboranto/side_2.jpg" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>...Follows us during one year...</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551820158/Ellaboranto/slid3.jpg"
-                                alt="Third slide">
+                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552998738/Ellaboranto/side_3.jpg" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>...Around the world!</p>
                             </div>
@@ -152,52 +158,94 @@
 
             <hr>
 
+            <!-- Gallery 1  -->
+
+            <h3>Canada<br/>- Algonquin park -</h3>
             <div class="downModule" onclick="dropDown()">
-                <h3>Algonquin park - Canada</h3>
                 <i class="fas fa-arrow-circle-down"></i>
             </div>
 
             <div class="gallery1">
+               
                 <div class="container">
 
                     <div class="item-a">
-                        <img id="modalImage"
-                            src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg"
-                            alt="voyage">
-                        <div id="myModal">
-
-                            <!-- The Close Button -->
-                            <span class="close">&times;</span>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="img01"
-                                src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg">
-
-                            <!-- Modal Caption (Image Text) -->
-                            <div id="caption">
-                                <p>Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018</p>
-                            </div>
-                        </div>
+                        <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V9 / November 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551783471/Ellaboranto/photo1.jpg" alt="voyage">
                     </div>
 
                     <div class="item-b">
-                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg"
-                            alt="voyage2">
+                        <img class= "modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V4 / October 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817437/Ellaboranto/adult-adventure-boy-1157386.jpg" alt="voyage2">
                     </div>
+
                     <div class="item-c">
-                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817450/Ellaboranto/action-automobile-automotive-1849086.jpg"
-                            alt="voyage3">
+                        <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V3 / November 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817450/Ellaboranto/action-automobile-automotive-1849086.jpg" alt="voyage3">
                     </div>
                     <div class="item-d">
-                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817446/Ellaboranto/barefoot-beach-cheerful-1574653.jpg"
-                            alt="voyage4">
+                        <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V2 / November 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817446/Ellaboranto/barefoot-beach-cheerful-1574653.jpg" alt="voyage4">
                     </div>
                     <div class="item-e">
-                        <img src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817444/Ellaboranto/beach-children-coast-1509757.jpg"
-                            alt="voyage5">
+                        <img class="modalImage" data-title="Algonquin Parc / Canada / 87Q3RJPC+V6 / November 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1551817444/Ellaboranto/beach-children-coast-1509757.jpg"  alt="voyage5">
                     </div>
                 </div>
             </div>
+            <hr>
+
+            <h3>Japan<br/>- Tokyo -</h3>
+            <div class="downModule2" onclick="dropDown2()">
+                <i class="fas fa-arrow-circle-down"></i>
+            </div>
+
+            <!-- Gallery 2  -->
+
+            <div class="gallery2">
+                <div class="container">
+                    <div class="item-f">
+                        <img class="modalImage" data-title="Tokyo / Japan / 87Q3RJPC+V2 / June 2017" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552926974/Ellaboranto/asia-billboards-city-1727627.jpg"alt="voyage6">
+                    </div>
+                    <div class="item-g">
+                        <img class="modalImage" data-title="Tokyo / Japan / 87Q3RJPC+V6 / June 2017" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552926971/Ellaboranto/1536627800354.jpg"alt="voyage7">
+                    </div>
+                    <div class="item-h">
+                        <img class="modalImage" data-title="Tokyo / Japan / 87Q3RJPC+V4 / July 2017" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552926968/Ellaboranto/architecture-boy-family-712473.jpg"alt="voyage8">
+                    </div>
+                    <div class="item-i">
+                        <img class="modalImage" data-title="Tokyo / Japan / 87Q3RJPC+V8 / July 2017" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552926964/Ellaboranto/asia-japan-japanese-590478.jpg"alt="voyage9">
+                    </div>
+                    <div class="item-j">
+                        <img class="modalImage" data-title="Tokyo / Japan / 87Q3RJPC+V3 / June 2017" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927093/Ellaboranto/alley-architecture-buildings-1344537.jpg"alt="voyage9">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+             <!-- Gallery 3  -->
+
+            <h3>USA<br/>- From Chicago to Dallas -</h3>
+            <div class="downModule3" onclick="dropDown3()">
+                <i class="fas fa-arrow-circle-down"></i>
+            </div>
+
+            <div class="gallery3">
+                <div class="container">
+                    <div class="item-o">
+                        <img class="modalImage" data-title="On the road for Chicago / USA / 87Q3RJPC+V1 / January 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927540/Ellaboranto/autumn-boy-cap-1050082.jpg"alt="voyage14">
+                    </div>
+                    <div class="item-k">
+                        <img class="modalImage" data-title="On the road for Chicago / USA / 87Q3RJPC+V8 / January 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927637/Ellaboranto/adventure-baby-beautiful-286625.jpg"alt="voyage10">
+                    </div>
+                    <div class="item-l">
+                        <img class="modalImage" data-title="On the road for Chicago / USA / 87Q3RJPC+V7 / January 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927557/Ellaboranto/adult-affection-baby-853408.jpg"alt="voyage11">
+                    </div>
+                    <div class="item-m">
+                        <img class="modalImage" data-title="On the road for Chicago / USA / 87Q3RJPC+V5 / January 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927550/Ellaboranto/architecture-art-automobile-1693543.jpg"alt="voyage12">
+                    </div>
+                    <div class="item-n">
+                        <img class="modalImage" data-title="On the road for Chicago / USA / 87Q3RJPC+V2 / January 2018" onclick="modalImage(event)" src="https://res.cloudinary.com/dn4gqvfba/image/upload/v1552927545/Ellaboranto/architecture-building-buildings-1687314.jpg"alt="voyage13">
+                    </div>
+                    
+                </div>
+            </div>
+
         </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
