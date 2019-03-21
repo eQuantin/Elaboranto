@@ -163,6 +163,43 @@ body {
     font-size: 30px;
     margin: 16px;
 }
+
+.burger #burger {
+    display: none;
+}
+
+.burger .btn-burger{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #253842;
+    z-index: 2;
+}
+
+.burger .btn-burger:hover {
+    background-color: #fff;
+}
+
+.burger .btn-burger span {
+    color: #fff;
+}
+
+.burger .btn-burger:hover span {
+    color: rgb(82, 82, 82);
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -180,38 +217,6 @@ body {
 
 #content.active {
     margin-left: 60px;
-}
-
-#content .btn-burger{
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    text-align: center;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: #253842;
-    z-index: 2;
-}
-
-#content .btn-burger:hover {
-    background-color: #fff;
-}
-
-#content .btn-burger span {
-    color: #fff;
-}
-
-#content .btn-burger:hover span {
-    color: rgb(82, 82, 82);
-}
-
-#content .btn {
-    box-shadow: none !important;
 }
 
 /* ---------------------------------------------------
@@ -440,28 +445,6 @@ body {
     }
 }
 
-@media (max-width: 650px) {
-    .navi #sidebar {
-        display: none;
-    }
-
-    .navi #sidebar * {
-        display: none;
-    }
-
-    #content {
-        margin-left: 0;
-    }
-
-    #content.active {
-        margin-left: 0;
-    }
-
-    #content .btn-burger {
-        display: inline;
-    }
-}
-
 @media (max-height: 670px) {
     .navi #sidebar .socials {
         display: none;
@@ -491,7 +474,7 @@ body {
     }
 }
 
-@media (max-height: 414px) {
+@media (max-height: 414px), (max-width: 600px) {
     .navi #sidebar {
         display: none;
     }
@@ -508,7 +491,16 @@ body {
         margin-left: 0;
     }
 
-    #content .btn-burger {
+    .burger .btn-burger {
         display: inline;
     }
-}
+
+    .burger #burger {
+        display: none;
+    }
+
+    .burger #burger.active {
+        display: inline;
+        float: none;
+    }
+} 
